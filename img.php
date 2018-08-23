@@ -99,7 +99,10 @@ class imgcompress{
         imagedestroy($this->image);
     }
 }
-$source =  '123.png';//原图片名称
-$dst_img = 'text.png';//压缩后图片的名称
+$source =  'sr01.jpg';//原图片名称
+$dst_img = 'test.jpg';//压缩后图片的名称
 $percent = 1;  #原图压缩，不缩放，但体积大大降低
 $image = (new imgcompress($source,$percent))->compressImg($dst_img);
+
+echo "<img src='sr01.png' width='945' height='470'>";
+echo "<img src='test.png' width='945' height='470'>";
