@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实践</title>
+	<style>
+  /*点击移动css*/
+	/**{
+		padding: 0;
+		margin: 0;
+	}
+      .box{
+      	width: 40px;
+      	height: 40px;
+      	background: #000;
+      	position: absolute;
+      	top: 0;
+      	left: 0;
+      }*/
+      /*拖摆*/
+/*      *{
+        padding: 0;
+        margin: 0;
+      }
+      .box{
+        width: 200px;
+        height: 200px;
+        border: 2px solid #000;
+        position: absolute;
+        top:0;
+        left: 0;
+      }
+      .topl{
+        width: 200px;
+        height: 40px;
+        background: #f00;
+      }*/
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      .box{
+        width: 230px;
+        height: 400px;
+        margin: 100px auto;
+        background: #ccc;
+        position: relative;
+        overflow: hidden;
+      }
+      .box .text_box{
+        width: 200px;
+        position: absolute;
+        top: 0;
+        left: 0; 
+      }
+      .box .roll_box{
+        width: 30px;
+        height: 400px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .box .roll_box .roll{
+        width: 30px;
+        cursor: pointer;
+        border-radius: 18px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #00f;
+      }
+	</style>
+</head>
+<body>
+<!-- 点击移动元素 -->
+	<!-- <div class="box"></div> -->
+  <!-- 拖摆 -->
+  <!-- <div class="box">
+    <div class="topl"></div>
+  </div>-->
+  <div class="box">
+     <div class="text_box">
+成功者独立思考，而非偏执。电影《大空头》根据真实故事改编，讲述的是2008年美国“次贷危机”爆发前，三个做空市场而大赚特赚的团队。他们在房地产市场一片看好声中，发现了“次级房贷打包债券（CDO）”潜在的危机，敢于下重注，最终把握了这个“一生难遇一次”的成功机会。影片最惊心动魄的并不是他们如何发现这个机会，而是后半段，这几个人在苦等房地产崩盘时，自己的精神反而先濒临崩溃。他们独具慧眼，胆识超人，但随着市场狂欢，他们的亏损不断加大。他们有的面对客户的压力，险些被告上法庭，有人则要整天面对公司高层的指责和团队成员的动摇。
+
+这就向我们提出了一个老问题：为什么有时你发现了一个机会，却无法坚持下去，成为最后的大赢家？
+
+以前在我家做过钟点工的张阿姨，她要离开上海了。 张阿姨也算是个奇葩，她来上海七八年，做过美甲师、美发师、酒吧调酒师、中医按摩，每换一份工作，中间的过渡时间就用钟点工填充。
+
+张阿姨有个奇特的信念，她认为自己没赚到钱，是因为没有找到能赚钱的行业，而找不到能赚钱的行业，是因为她每次都比别人慢半拍。我们常常说到一个人坚持不下去，是因为缺乏毅力。但以张阿姨为例，她在转入一个新行业时，往往是很有毅力的。
+
+我最害怕的不是选错方向，也不是个人不够优秀，而是很多人每次开始一个事情，不到一年，他就放弃了，然后说这个事情不行。很多人，就这样浪费了自己的一生，一直在第一年第二年的怪圈里打转。
+
+这种现象还有很多——减肥时，尝试过方法越多的人，越不容易减肥成功。学英语时，我们也是不断的换方法：背单词、看美剧、看原版小说、找老外对话，但最后的效果总不明显。 很多时候，我们坚持不下去，并不是因为我们缺乏毅力。
+
+不知道大家有没有想过一个问题，为什么成功的方法那么多，而成功的人那么少呢？ 有人说，是没有找到适合自己的方法。
+
+这话听上去有道理，但屁用没有，而且有害。“某个方法不适合自己”是结果，而非原因，就像大家的普遍心态，不试试，你怎么知道没用呢？
+
+找不到适合自己的方法，是因为“有效的方法”存在一个悖论：人人喜欢用的方法，效果总是一般的，否则人人都能成功了；同理，效果好的方法，肯定不是人人都能用的，它一定会击中你的某一个弱点。
+
+人人都喜欢的方法，往往短期内效果很好，比如，通过节食减肥，开头效果很明显，但到了一定时间之后，体重怎么也降不下来。 还有一些人人喜欢的方法，虽然没有任何效果，但却给你一种“希望的幻觉”，让你乐此不疲，比如买彩票，有人说是智商税，其实更准确的说法是“希望税”。
+
+短期有效有方法很容易上手，却无法形成核心竞争力。相反，有一些真正长期有效的方法，在短期内很可能没有明显的效果，让你丧失信心。比如浸入式英语学习，很可能你在开头两三个月，完全没有任何进展，一定要突破一个瓶颈之后，效果才能爆发。
+
+再比如读书，你坚持每周读一本书，在开头的几个月内，很可能得不到任何实际帮助，更让你沮丧的是，竟然很快就都忘光了。这时，你会面对这一类方法最大的敌人——你内心深处的怀疑。
+
+在各种“无法坚持”的原因中，最深刻、最普遍、最击中人性弱点的一个原因就是——没有任何一种方法必然成功。战胜我们自己内心一蹴而就的心态，战胜我们内心对失败的恐惧。任何一个创造者，都在他的人生中制造过无数垃圾。永远不会有一次就成功的创造者，而只有不断连续创造，大量创造的人，才能最大概率地让自己的作品有成功的可能性。
+
+无论你多么相信它，无论是多么牛逼的人推荐过它，也无论它让多少人成功过，在内心深处，你总是怀疑的——你害怕自己浪费时间，害怕自己到三四十岁还是一事无成，所以你对任何一种短期内不会见效的方法，都不会放心使用。
+
+所以会有前面说的那句话：“人人喜欢用的方法，效果总是一般的，效果好的方法，肯定不是人人都能用的。” 如何走出这别扭的局面呢？
+
+回到《大空头》这部电影，这三个团队正遇到了这个“有效方法悖论”。明显的市场机会，人人都能看到，利润非常微薄。真正的大机会，往往出现在市场拐点形成之前，才有人肯跟你交易，但这个机会又很痛苦。一旦市场没有出现你预期的变化，你就会出现巨大的账面亏损。
+
+先简单解释一下什么叫做空，大家熟知的赚钱方式是买入一只股票，等待上涨获利并卖出，这叫做多，你表达的是对这支股票正面的积极的看法，即后市会上涨；做空就是做多的反面，表达的是负面的消极的看法，即后市会下跌，做空通过市场的下跌来获利。在股票上需要融券，支付一定的利息借入证券先行卖出，在下跌之后以更低的价格买回还券来获利；在期货上需要开空单，并在合约下跌之后平掉空单获利；在CDS上需要作为买方，每年支付固定的费用，以期待约定的信用事件发生得到赔付来获利。
+
+多空如同硬币的两面，影形不离，但是两者成功的概率，承担的风险却是天壤之别。
+
+做空是一件非常危险的事情，原因就在于缺乏适当的工具，导致风险收益极为不匹配，因此，做空的死亡名单上，从来不缺乏功成名就的大佬、急于求成的冒险者和倒在黎
+     </div>
+     <div class="roll_box">
+       <div class="roll"></div>
+     </div> 
+  </div>
+</body> 
+ <!-- 点击移动 -->
+<!--   <script>
+  	var box = document.getElementsByClassName("box")[0];
+  	var time=null;
+  	var posix = 0;
+  	var posiy = 0; 
+  	window.onclick=function(sve){
+       var pagex = sve.pageX;
+       var pagey = sve.pageY;
+       var width = box.offsetWidth/2;
+       var height = box.offsetHeight/2;
+       var movex = pagex-width;
+       var movey = pagey-height;
+       clearInterval(time);
+       time=setInterval(function(){
+       	var stepx = (movex-posix)/10;
+       	    stepx = stepx>0?Math.ceil(stepx):Math.floor(stepx);
+       	    posix = stepx+posix;
+       	box.style.left=posix+"px";
+       	var stepy = (movey-posiy)/10;
+       	    stepy = stepy>0?Math.ceil(stepy):Math.floor(stepy);	
+       	    posiy = posiy+stepy;
+       	box.style.top=posiy+"px";
+       },10)
+  	}
+  </script> <--></-->
+  <!-- 拖摆 -->
+<!--   <script>
+      var box = document.getElementsByClassName("box")[0];
+      var topl = document.getElementsByClassName("topl")[0];
+      topl.onmousedown=function(svr){
+         var pagex = svr.pageX;
+         var pagey = svr.pageY;
+         var ttop = box.offsetTop;
+         var lleft = box.offsetLeft;
+         var xpage = pagex-lleft;
+         var ypage = pagey-ttop;
+
+         window.onmousemove=function(svr){
+           var tpagex = svr.pageX;
+           var tpagey = svr.pageY;
+           var tivex = tpagex-xpage;
+           var tivey = tpagey-ypage;
+           box.style.top=tivey+"px";
+           box.style.left=tivex+"px";
+           window.getSelection?window.getSelection().removeAllRanges():document.selection.empty();
+         }
+      }
+      window.onmouseup=function(){
+        window.onmousemove = null;
+      }
+  </script> -->
+  <script>
+    var box = document.getElementsByClassName("box")[0];
+    var texBox = document.getElementsByClassName("text_box")[0];
+    var rollBox = document.getElementsByClassName("roll_box")[0];
+    var roll = document.getElementsByClassName("roll")[0];
+
+    var Pro1 = box.offsetHeight/texBox.scrollHeight;
+
+    var roHei = Pro1*rollBox.offsetHeight;
+    roll.style.height=roHei+"px";
+
+    roll.onmousedown=function(sev){
+       var posy = sev.pageY-roll.offsetTop;
+
+
+        console.log(roll.offsetTop)
+         window.onmousemove=function(sev){
+             var rposy = sev.pageY;
+             var moHie = rposy-posy;
+             if(moHie<0){
+                 moHie=0;
+             }else if(moHie>rollBox.offsetHeight-roll.offsetHeight){
+                  moHie=rollBox.offsetHeight-roll.offsetHeight;
+             }
+             roll.style.top=moHie+"px";
+             var Por2 = (texBox.scrollHeight-box.offsetHeight)/(rollBox.offsetHeight-roll.offsetHeight);
+             var disr = moHie*Por2;
+             texBox.style.top=-disr+"px";
+              window.getSelection?window.getSelection().removeAllRanges():document.selection.empty();
+             window.onmouseup=function(){
+              window.onmousemove=null;
+             }
+         }
+
+    }
+  </script>
+</html>

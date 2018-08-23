@@ -9,6 +9,7 @@
 	background: #eee;	
 	position: relative;
 	cursor: pointer;
+	border-top: 1px solid #000;
 }
 .admin ul li {
 	height: 250px;
