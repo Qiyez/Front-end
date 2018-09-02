@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>花朵盛开</title>
+	<!-- css 层叠样式表 -->
+	<style>
+		body {
+			margin: 0;
+		}
+		.container {
+			width: 400px;
+			height: 400px;
+			/*块级元素在父元素中水平居中*/
+			margin:200px auto;
+			/*margin-left: auto;
+			margin-right: auto;*/
+			position: relative;
+			transform: rotate(45deg);
+		}
+		.container div {
+			width: 400px;
+			height: 400px;
+			background: red;
+			/*透明度 取值0-1  */
+			opacity: 0.3;
+			/*绝对定位元素  如果能找到定位的父级元素 则相对于父级元素 否则相对于浏览器 */
+			position: absolute;
+			/*top: 200px;
+			left:100px;*/
+			border-radius: 0 100% ;
+			transform-origin: bottom right;
+			transition: all 3s;
+		}
+		.container:hover .a{transform: rotate3d(1,1,1,30deg);}
+		.container:hover .b{transform: rotate3d(1,1,1,60deg);}
+		.container:hover .c{transform: rotate3d(1,1,1,90deg);}
+		.container:hover .d{transform: rotate3d(1,1,1,120deg);}
+		.container:hover .e{transform: rotate3d(1,1,1,150deg);}
+		.container:hover .f{transform: rotate3d(1,1,1,180deg);}
+		.container:hover .g{transform: rotate3d(1,1,1,210deg);}
+		.container:hover .h{transform: rotate3d(1,1,1,240deg);}
+		.container:hover .i{transform: rotate3d(1,1,1,270deg);}
+		.container:hover .j{transform: rotate3d(1,1,1,300deg);}
+		.container:hover .k{transform: rotate3d(1,1,1,330deg);}
+		.container:hover .l{transform: rotate3d(1,1,1,360deg);}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="a"></div>
+		<div class="b"></div>
+		<div class="c"></div>
+		<div class="d"></div>
+		<div class="e"></div>
+		<div class="f"></div>
+		<div class="g"></div>
+		<div class="h"></div>
+		<div class="i"></div>
+		<div class="j"></div>
+		<div class="k"></div>
+		<div class="l"></div>
+	</div>
+</body>
+</html>
