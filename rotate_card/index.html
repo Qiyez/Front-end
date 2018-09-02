@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>托马斯回旋</title>
+	<style type="text/css">
+		.main {
+			height: 300px;
+			width: 237px;
+			position: relative;
+			border: 2px solid #ddd;
+			margin: 80px 30%;
+		}
+		img {
+			width: 237px;
+			height: 300px;
+		}
+		.main div {
+			position: absolute;
+			transform-origin: 237px 300px;
+			transition: all 3s;
+		}
+		.main:hover .a {transform: rotate(320deg);}
+		.main:hover .b {transform: rotate(240deg);}
+		.main:hover .c {transform: rotate(180deg);}
+		.main:hover .d {transform: rotate(120deg);}
+		.main:hover .e {transform: rotate(60deg);}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="a"><img src="./img/w1.jpg"></div>
+		<div class="b"><img src="./img/w2.jpg"></div>
+		<div class="c"><img src="./img/w3.jpg"></div>
+		<div class="d"><img src="./img/w4.jpg"></div>
+		<div class="e"><img src="./img/w5.jpg"></div>
+		<div class="g"><img src="./img/w6.jpg"></div>
+	</div>
+</body>
+</html>
