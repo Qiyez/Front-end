@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>迷路的立方体</title>
+	<style type="text/css">
+		body {
+			background: #ceecae;
+		}
+		.main {
+			width: 200px;
+			height: 200px;
+			margin: 300px auto;
+			transform-style: preserve-3d;
+			animation: test 5s infinite;
+		}
+		.main div {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			opacity: 0.6;
+		}
+		.main div:nth-of-type(1){
+			background:url("img/1.gif");
+			transform: translateZ(100px);
+		}
+		.main div:nth-of-type(2){
+			background:url("img/2.jpg");
+			transform: translateZ(-100px);
+		}
+		.main div:nth-of-type(3){
+			background:url("img/3.jpg");
+			transform: translateY(100px) rotateX(90deg);
+		}
+		.main div:nth-of-type(4){
+			background:url("img/4.jpg");
+			transform: translateY(-100px) rotateX(90deg);
+		}
+		.main div:nth-of-type(5){
+			background:url("img/5.jpg");
+			transform: translateX(100px) rotateY(90deg);
+		}
+		.main div:nth-of-type(6){
+			background:url("img/6.jpg");
+			transform: translateX(-100px) rotateY(90deg);
+		}
+		@keyframes test{
+			0%{
+				transform: rotate3d(1,1,1,0deg) translate(0px,0px);
+			}
+			25%{
+				transform: rotate3d(1,1,1,170deg) translate(360px,-180px);
+			}
+			50%{
+				transform: rotate3d(1,0,1,420deg) translate(400px,250px);
+			}
+			75%{
+				transform: rotate3d(1,1,0,-37deg) translate(300px,-282px);
+			}
+			100%{
+				transform: rotate3d(1,0,1,360deg) translate(0px,0px);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>
