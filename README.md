@@ -1,4 +1,4 @@
-# Web front end
+# Web Front End
 一些有趣的前端小作品
 
 每个Demo都是一个独立出来的小模块
