@@ -8,7 +8,6 @@
     <style type="text/css">
         div {
             margin: 50px auto;
-            background: url("img-test/bg.png") no-repeat fixed 480px 130px;
         }
     </style>
 </head>
@@ -26,12 +25,26 @@
         data-throwable="1.2"
         data-brake="0.2"> -->
 
-        <img src="img-test/01.png" width="600" height="600" 
-        class="reel"
-        id="image"
-        data-images="img-test/##.png|01..30"
-        data-cw="true"
-        > 
+        <img src="img-test/01.png" width="600" height="600" class="reel" id="image">
+        <button onclick="imgtran()">transform</button>
     </div>
+    <script type="text/javascript">
+        $(function(){    
+            //3D展示效果
+            $('#image').reel({
+                images: 'https://dev-wow.uum3d.com/uploads/posed_based/c108929b3efce1a04661364cfddd20ba/preview/##.png|01..30',
+                cw: 'true',
+            });
+        });
+        function imgtran(){
+            $(function(){    
+            //3D展示效果
+            $('#image').reel({
+                images: 'img/##.png|00..29',
+                cw: 'true',
+            });
+        });
+        }
+    </script>
 </body>
 </html>
